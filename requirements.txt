@@ -1,0 +1,15 @@
+PyMuPDF
+pdf2image
+pytesseract
+opencv-python
+langdetect
+sentence-transformers
+faiss-cpu
+faiss-gpu
+transformers
+torch
+accelerate
+matplotlib
+evaluate
+nltk
+
