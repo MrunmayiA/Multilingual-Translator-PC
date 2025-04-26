@@ -129,19 +129,10 @@ def get_embedding_model(model_name, device):
     model = SentenceTransformer(model_name)
     return model.to(device)
 
-def load_faiss_index(index_path, use_gpu):
-    """Load FAISS index and optionally move to GPU"""
-    # Load CPU index
-    cpu_index = faiss.read_index(index_path)
-    
-    gpu_resources = None
-    if use_gpu and torch.cuda.is_available():
-        # Move to GPU
-        gpu_resources = faiss.StandardGpuResources()
-        index = faiss.index_cpu_to_gpu(gpu_resources, 0, cpu_index)
-        return index, gpu_resources
-    
-    return cpu_index, None
+def load_faiss_index(index_path, use_gpu=False):
+    """Load FAISS index (always CPU-only version)"""
+    index = faiss.read_index(index_path)
+    return index, None
 
 def load_chunks_metadata(meta_path):
     """Load chunks metadata with error handling"""

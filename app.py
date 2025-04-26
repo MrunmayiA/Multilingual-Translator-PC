@@ -1,4 +1,7 @@
 import gradio as gr
+import time
+import shutil
+import os
 from extract_text.extractor import extract_text_auto
 from chunk_text.chunker import chunk_text
 from vector_store.embed_and_store import embed_and_store_chunks
@@ -7,13 +10,23 @@ from llm.answer_generator import generate_answer
 
 chat_history = []
 
-# PDF processing
+
 def process_pdf(pdf_file):
-    path = pdf_file.name
-    text = extract_text_auto(path)
+    # 1. Create a safe folder for uploaded PDFs
+    save_dir = "uploaded_pdfs"
+    os.makedirs(save_dir, exist_ok=True)
+
+    # 2. Copy the uploaded temp file to a safe location
+    saved_path = os.path.join(save_dir, os.path.basename(pdf_file.name))
+    shutil.copy(pdf_file.name, saved_path)
+
+    # 3. Now use the copied file, not the temp file
+    text = extract_text_auto(saved_path)
     chunks = chunk_text(text, chunk_size=500, overlap=100)
     embed_and_store_chunks(chunks)
+
     return f"✅ PDF processed with {len(chunks)} chunks."
+
 
 # Chat-based RAG
 def rag_query(question, reference):
@@ -43,6 +56,24 @@ def clear_chat():
     global chat_history
     chat_history = []
     return []
+
+def process_pdf(pdf_file):
+    start_time = time.time()
+
+    save_dir = "uploaded_pdfs"
+    os.makedirs(save_dir, exist_ok=True)
+    saved_path = os.path.join(save_dir, os.path.basename(pdf_file.name))
+    shutil.copy(pdf_file.name, saved_path)
+
+    text = extract_text_auto(saved_path)
+    chunks = chunk_text(text, chunk_size=500, overlap=100)
+    embed_and_store_chunks(chunks)
+
+    end_time = time.time()
+    total_time = end_time - start_time
+
+    return f"✅ PDF processed with {len(chunks)} chunks. 🕒 Took {total_time:.2f} seconds."
+
 
 # UI
 with gr.Blocks(theme=gr.themes.Soft()) as demo:

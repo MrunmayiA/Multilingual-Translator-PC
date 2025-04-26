@@ -1,0 +1,44 @@
+[2025-04-26 13:05:55] Query: what is the pdf about ?...
+Vector search: 0.0403s (1018.2% improvement)
+Total processing: 5.9642s (-86.9% improvement)
+--------------------------------------------------
+[2025-04-26 13:07:14] Query: what is the name of the author...
+Vector search: 0.0000s (45000.0% improvement)
+Total processing: 0.5631s (39.1% improvement)
+--------------------------------------------------
+[2025-04-26 13:08:13] Query: is there any other author ?...
+Vector search: 0.0000s (45000.0% improvement)
+Total processing: 0.5340s (46.6% improvement)
+--------------------------------------------------
+[2025-04-26 13:13:23] Query: what is the pdf about? Tell in...
+Vector search: 0.0000s (45000.0% improvement)
+Total processing: 0.8616s (-9.1% improvement)
+--------------------------------------------------
+[2025-04-26 13:15:19] Query: What is Sobel Filter?...
+Vector search: 0.0003s (45000.0% improvement)
+Total processing: 0.6358s (23.2% improvement)
+--------------------------------------------------
+[2025-04-26 13:37:19] Query: what is the pdf about ?...
+Vector search: 0.0463s (874.8% improvement)
+Total processing: 7.4851s (-89.5% improvement)
+--------------------------------------------------
+[2025-04-26 13:40:33] Query: what is the name of the book?...
+Vector search: 0.0000s (45000.0% improvement)
+Total processing: 0.8997s (-13.0% improvement)
+--------------------------------------------------
+[2025-04-26 13:44:03] Query: bye...
+Vector search: 0.0000s (45000.0% improvement)
+Total processing: 0.9096s (-13.9% improvement)
+--------------------------------------------------
+[2025-04-26 13:50:00] Query: what is the name of the third ...
+Vector search: 0.0497s (807.0% improvement)
+Total processing: 5.7662s (-86.4% improvement)
+--------------------------------------------------
+[2025-04-26 14:47:23] Query: what is the pdf about?...
+Vector search: 0.0477s (846.2% improvement)
+Total processing: 9.7681s (-92.0% improvement)
+--------------------------------------------------
+[2025-04-26 14:48:30] Query: who is the author ?...
+Vector search: 0.0000s (45000.0% improvement)
+Total processing: 2.0681s (-62.1% improvement)
+--------------------------------------------------
