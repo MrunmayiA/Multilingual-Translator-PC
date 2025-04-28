@@ -42,3 +42,59 @@ Total processing: 9.7681s (-92.0% improvement)
 Vector search: 0.0000s (45000.0% improvement)
 Total processing: 2.0681s (-62.1% improvement)
 --------------------------------------------------
+[2025-04-28 22:14:12] Query: what is the pdf about ...
+Vector search: 0.0395s (1041.1% improvement)
+Total processing: 7.1347s (-89.0% improvement)
+--------------------------------------------------
+[2025-04-28 23:58:00] Query: what is the pdf about ?...
+Vector search: 0.0621s (626.0% improvement)
+Total processing: 7.6449s (-89.8% improvement)
+--------------------------------------------------
+[2025-04-28 23:59:58] Query: summarize the document...
+Vector search: 0.0010s (44640.6% improvement)
+Total processing: 0.8195s (-4.5% improvement)
+--------------------------------------------------
+[2025-04-29 00:01:53] Query: what is the pdf about ...
+Vector search: 0.0000s (45000.0% improvement)
+Total processing: 1.0396s (-24.7% improvement)
+--------------------------------------------------
+[2025-04-29 00:02:49] Query: what is the pdf about ...
+Vector search: 0.0000s (45000.0% improvement)
+Total processing: 1.0529s (-25.6% improvement)
+--------------------------------------------------
+[2025-04-29 00:12:04] Query: what is the pdf about ...
+Vector search: 0.0780s (478.3% improvement)
+Total processing: 7.2439s (-89.2% improvement)
+--------------------------------------------------
+[2025-04-29 00:20:10] Query: WHAT IS THE PDF ABOUT...
+Vector search: 0.0501s (801.0% improvement)
+Total processing: 7.6498s (-89.8% improvement)
+--------------------------------------------------
+[2025-04-29 00:24:17] Query: what is the pdf about...
+Vector search: 3.4810s (-87.0% improvement)
+Total processing: 3.4820s (-77.5% improvement)
+--------------------------------------------------
+[2025-04-29 00:24:31] Query: who is the author...
+Vector search: 0.0780s (478.2% improvement)
+Total processing: 0.0780s (903.8% improvement)
+--------------------------------------------------
+[2025-04-29 00:25:00] Query: hi...
+Vector search: 0.0870s (418.5% improvement)
+Total processing: 0.0880s (790.0% improvement)
+--------------------------------------------------
+[2025-04-29 00:40:15] Query: what is the pdf about ...
+Vector search: 0.0386s (1067.3% improvement)
+Total processing: 5.4318s (-85.6% improvement)
+--------------------------------------------------
+[2025-04-29 00:41:11] Query: what is the pdf about ...
+Vector search: 0.0000s (45000.0% improvement)
+Total processing: 0.4978s (57.3% improvement)
+--------------------------------------------------
+[2025-04-29 00:42:28] Query: what is the pdf about...
+Vector search: 0.0014s (32878.2% improvement)
+Total processing: 0.5650s (38.6% improvement)
+--------------------------------------------------
+[2025-04-29 00:50:06] Query: what is the pdf about...
+Vector search: 0.0379s (1088.5% improvement)
+Total processing: 5.3458s (-85.4% improvement)
+--------------------------------------------------

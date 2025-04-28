@@ -3,13 +3,17 @@ pdf2image
 pytesseract
 opencv-python
 langdetect
-sentence-transformers
-faiss-cpu
+sentence-transformers>=2.2.2
+faiss-cpu>=1.7.4
 faiss-gpu
 transformers
-torch
+torch>=2.0.0
 accelerate
 matplotlib
 evaluate
 nltk
+numpy>=1.24.0
+tqdm>=4.65.0
+logging>=0.5.1.2
+typing>=3.7.4.3
 
